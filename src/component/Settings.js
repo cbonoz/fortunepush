@@ -2,12 +2,12 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Switch } from 'react-native';
 
-import DatePicker from 'react-native-dailyTimepicker'
+import DatePicker from 'react-native-time-picker'
 import store from 'react-native-simple-store';
 
 import PushNotification from 'react-native-push-notification';
 
-import fortunes from '../util/fortunes';
+import fortunes from './../util/fortunes';
 
 const JOB_ID = "123"
 // create a component

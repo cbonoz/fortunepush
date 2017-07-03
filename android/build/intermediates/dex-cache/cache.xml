@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_86acde261690b965e201f56b3899ee3e46248564.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/me.leolin/ShortcutBadger/1.1.8/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="531c33d3697000a05e9493a2d0f09ba41fa114d3">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/me.leolin-ShortcutBadger-1.1.8_39ffd71fe98be6a248450e0795e83b8ea0c7a0e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_3d72ec2fcbf2f75e79c7ba83a4b6bbfbadd739e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.45.1/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_0a22918ba6a6c1fa626d1324dcc4393bca222b7d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_8c7b3423ed22195bacde4220c431fff9eb1b3c55.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_a22333db3ed9a1e431ded226ee1ff1a898dda82e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_76546212449066ff3083a928ad700ab24460c0af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_d0c826a748186f13f9c539090c4cb7c7825460bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_16bdaca9f2f52c362c9e83bb3a383ad8888d8a2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_b79ca0c4e7e724cbd9a013ba6557abbabcecd89e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_b3b80128994ef633d2ecf63be08afee42a1f7647.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f0a85e6000998ac322ddd50750e8cf91601a84b">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.2.6_837e9d21563748d1dffa27e2ce13eca3e512a994.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_622149f2a80cda30f9290c3d0d4e38f4241a6e34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d54a722583c1b99735f62d395806fa38bf5669ae">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-10.2.6_b30870de15a2453a4fab80409739141cc25b9207.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_acec941b6c108be0413f34e7a32bab8d8404e8fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69e74a8b1cbf5b8ee0fc0cca6bab1ac6c45efef8">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.2.6_634994bd78b4997c3f756da92d002665302481b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_2ac369b0af0fc6b8d69a4c7ede6e39380169c1ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_dcfc8162ecf804124cf5d26e0bef7fe3c9ac9c3c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.45.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0d3e48e200296061415952a358fad487e129adaa">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.45.1_dc1a16b1637561f8d4ba2b81d49bbaa4ba03ca6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_16e152c1f4598373baa24207898669c55cb94b33.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_e7fe7202826a3126f6de9ebfe2cfdee2600fa1f9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="215363c803a119c16058c8bc0ccd0a4ee62e7157">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-10.2.6_6772358fa4fede7444929a3d85c1c87f44c3c8be.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_e9e010a80a5f51abce7a8b968bc6bf4b225f9575.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="900a290779cdb4eb2e63b6f7806fd9f30ce4f60d">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.2.6_2d969521e2df5ccca1b5d2ad1d32934fb4f3a7d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/fortunepush/react-native-push-notification/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="45f56f33b212cfa933d1a88d8e4b2ce4eff42808">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/fortunepush-react-native-push-notification-unspecified_6ce787d4603113bd38356b0f9ebc58ccfc89fdaf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_0c5210d1c0ce65df64b23c95261a9002657c9d0a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_9f70090a92c231ee713ecc30dfafd5fafbdc2a9d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_c814801044a2b76a41162199809e335f9abda68a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_2b6ae20d26e039483f019da1fcf30795d94e1c85.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_ccc05007d5498a15cc72fa43ab92a28457565f0b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_0d68f90d498591dd65667a43d8d7fe615e29f2b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_fc6ce76c31b477c356ba37a771d10d27bbb22c3c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/Users/cbuonocore/personal/fortunepush/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_1ababdea7d8cfa9b7535b98e7b35971ea5ae622a.jar" />
+    </item>
+
+</items>

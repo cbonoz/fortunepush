@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Home from "./src/Home";
+import Home from "./src/component/Home";
 
 import PushNotification from 'react-native-push-notification';
 import store from 'react-native-simple-store';
