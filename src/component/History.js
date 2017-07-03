@@ -8,7 +8,8 @@ class History extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>History</Text>
+                <Text style={styles.titleText}>History</Text>
+                <FortuneList/>
             </View>
         );
     }
@@ -22,6 +23,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#2c3e50',
     },
+    titleText: {
+        justifyContent: 'center',
+        alignSelf: 'center'
+    },
+
 });
 
 //make this component available to the app

@@ -1,6 +1,6 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 import store from 'react-native-simple-store';
 
 import FortuneList from './FortuneList';
@@ -17,9 +17,7 @@ class CurrentFortune extends Component {
             <View style={styles.container}>
                 <Text>CurrentFortune</Text>
 
-                <Text>
-                    <FortuneList/>
-                </Text>
+                <Image style={styles.centered} source={require('./../../assets/fortune_push_175.png')}/>
 
                 <Button
                     onPress={goToSettings}
@@ -39,6 +37,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#2c3e50',
+    },
+    centered: {
+        margin: 20,
+        alignSelf: 'center',
     },
 });
 

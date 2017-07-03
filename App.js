@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Home from "./src/component/Home";
 
 import PushNotification from 'react-native-push-notification';
 import store from 'react-native-simple-store';
 
-export default class App extends React.Component {
+export default class App extends Component {
 
   componentWillMount() {
 
@@ -48,9 +48,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <View>
         <Home/>
-        </View>
     );
   }
 }

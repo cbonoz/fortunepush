@@ -24,9 +24,11 @@ class FortuneList extends Component {
         return (
             <View style={styles.container}>
                 <Text>FortuneList</Text>
+                {/*Each row item will be the generated notification, need to parse out the relevant attributes
+                for the */}
                 <ListView
                     dataSource={this.state.fortunes}
-                    renderRow={(rowData) => <Text style={styles.listItem}> {rowData}</Text>}
+                    renderRow={(rowData) => <Text style={styles.listItem}>{rowData}</Text>}
                 />
 
             </View>
