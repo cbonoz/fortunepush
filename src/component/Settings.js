@@ -2,11 +2,9 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Switch } from 'react-native';
 
-import DatePicker from 'react-native-time-picker'
-import store from 'react-native-simple-store';
-
 import PushNotification from 'react-native-push-notification';
 
+import store from 'react-native-simple-store';
 import fortunes from './../util/fortunes';
 
 const JOB_ID = "123"
@@ -14,14 +12,21 @@ const JOB_ID = "123"
 class Settings extends Component {
 
     constructor(props) {
-        super(props)
-        this.state = { dailyTime: "", scheduled: false }
+        super(props);
+        this.state = { 
+            dailyTime: "", 
+            scheduled: false,
+        };
     }
 
     componentWillMount() {
         store.get("scheduled").then((res) => {
-            this.setState({ scheduled: res });
-        })
+            if (res) {
+                this.setState({ scheduled: true });
+            }
+        }).catch(error => {
+            console.error(error.message);
+        });
     }
 
     setScheduled(val) {

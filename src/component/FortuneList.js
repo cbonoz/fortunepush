@@ -1,39 +1,43 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { ListView, View, Text, StyleSheet } from 'react-native';
 
 import store from 'react-native-simple-store';
 
 // create a component
 class FortuneList extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            fortunes: []
-        }
+    createListView(items) {
+        const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+        return ds.cloneWithRows(items);
     }
 
     componentWillMount() {
         store.get('fortunes').then((res) => {
-            this.setState({ fortunes: res });
+            console.log('fortunes: ' + res);
+            this.setState({ fortunes: this.createListView(res) });
+        }).catch((error) => {
+            console.error(error.message);
         });
     }
 
-    render() {
-        return (
-            <View style={styles.container}>
-                <Text>FortuneList</Text>
-                {/*Each row item will be the generated notification, need to parse out the relevant attributes
-                for the */}
-                <ListView
-                    dataSource={this.state.fortunes}
-                    renderRow={(rowData) => <Text style={styles.listItem}>{rowData}</Text>}
-                />
-
-            </View>
-        );
+    constructor() {
+        super();
+        this.state = {
+            dataSource: this.createListView(['row 1', 'row 2']),
+        };
     }
+
+    render() {
+      return (
+        <View style={styles.container}>
+            <Text>FortuneList</Text>
+            <ListView dataSource={this.state.dataSource}
+                renderRow={(rowData) => <Text style={styles.listItem}>{rowData}</Text>}
+            />
+        </View>
+    );
+  }
 }
 
 // define your styles
@@ -45,6 +49,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#2c3e50',
     },
     listItem: {
+        color: '#fff',
         padding: 20,
         borderRadius: 4,
         borderWidth: 0.5,

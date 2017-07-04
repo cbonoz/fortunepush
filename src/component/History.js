@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import store from 'react-native-simple-store';
 
+import FortuneList from './FortuneList';
+
 // create a component
 class History extends Component {
     render() {
