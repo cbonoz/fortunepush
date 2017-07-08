@@ -1,11 +1,14 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Switch } from 'react-native';
+import { View, Text, Button, StyleSheet, Switch } from 'react-native';
 
 import PushNotification from 'react-native-push-notification';
+import DateTimePicker from 'react-native-modal-datetime-picker';
+import Toast, {DURATION} from 'react-native-easy-toast'
 
 import store from 'react-native-simple-store';
 import fortunes from './../util/fortunes';
+import { styles } from 'react-native-theme';
 
 const JOB_ID = "123"
 // create a component
@@ -14,35 +17,71 @@ class Settings extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            dailyTime: "", 
+            dailyTime: "No time yet.", 
             scheduled: false,
+            isDateTimePickerVisible: false,
+            datePickerMode: 'time',
         };
     }
 
+    _showDateTimePicker = () => this.setState({ isDateTimePickerVisible: true });
+
+    _hideDateTimePicker = () => this.setState({ isDateTimePickerVisible: false });
+
+    _handleDatePicked = (date) => {
+        console.log('A date has been picked: ', date);
+        this.setState({dailyTime: date});
+        this._hideDateTimePicker();
+    };
+
     componentWillMount() {
+        const self = this;
         store.get("scheduled").then((res) => {
-            if (res) {
-                this.setState({ scheduled: true });
+            console.log('scheduled: ', res);
+            if (typeof(res) === 'boolean') {
+                self.setState({ scheduled: res });
+            } else {
+                self.setState({ scheduled: false });
             }
         }).catch(error => {
-            console.error(error.message);
+            console.error('error getting scheduled: ' + error.message);
+        });
+
+        store.get('dailyTime').then((res) => {
+            console.log('dailyTime: ' + res);
+            self.setState({ dailyTime: res });
+        }).catch(error => {
+            console.error('error getting dailyTime: ' + error.message);
         });
     }
 
-    setScheduled(val) {
-        store.update("scheduled", val);
-        this.setState({ scheduled: val });
+    _showDateRequired() {
+        this.refs.toast.show('You must set a fortune delivery time first.');
+    }
+
+    _setScheduled(isScheduled) {
+        if (!(this.state.dailyTime instanceof Date)) {
+            // No daily time set yet for scheduling.
+            this._showDateRequired();
+
+        }
+
+        store.update("scheduled", isScheduled);
+        console.log('_setScheduled: ' + isScheduled);
+        this.setState({ scheduled: isScheduled });
         // Update the react scheduler for sending fortunes.
-        if (val) {
+        if (isScheduled) {
             // TODO: make sure the daily time is defined before scheduling the next fortune alert.
             PushNotification.localNotificationSchedule({
                 id: JOB_ID,
                 message: fortunes.getNextFortune(), // (required)
                 repeatType: 'day', // (Android only) Repeating interval. 
                 repeatTime: 60000*60*24, // One day.
-                date: new Date(Date.now() + (60 * 1000)) // in 60 secs
+                date: this.state.dailyTime
             });
+                // date: new Date(Date.now() + (60 * 1000)) // in 60 secs
         } else {
+            // Cancel the existing scheduled notification task.
             PushNotification.cancelLocalNotifications({id: JOB_ID});
         }
     }
@@ -50,50 +89,32 @@ class Settings extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>Settings</Text>
+                <Text style={styles.h1}>Settings</Text>
 
-                <Text>Fortunes will be sent daily at the time listed below.</Text>
+                <Text style={styles.h2}>Fortunes will be sent daily at the time listed below.</Text>
 
-                <DatePicker
-                    style={{ width: 200 }}
-                    dailyTime={this.state.dailyTime}
-                    mode="dailyTime"
-                    placeholder="select dailyTime"
-                    format="YYYY-MM-DD"
-                    confirmBtnText="Confirm"
-                    cancelBtnText="Cancel"
-                    customStyles={{
-                        dailyTimeIcon: {
-                            position: 'absolute',
-                            left: 0,
-                            top: 4,
-                            marginLeft: 0
-                        },
-                        dailyTimeInput: {
-                            marginLeft: 36
-                        }
-                        // ... You can check the source to find the other keys.
-                    }}
-                    onDateChange={(dailyTime) => { this.setState({ dailyTime: dailyTime }) }}
+                <Button 
+                    style={styles.fortuneButton}
+                    title="Show TimePicker"
+                    onPress={this._showDateTimePicker}>
+                </Button>
+                <DateTimePicker
+                    mode={this.state.datePickerMode}
+                    isVisible={this.state.isDateTimePickerVisible}
+                    onConfirm={this._handleDatePicked}
+                    onCancel={this._hideDateTimePicker}
                 />
 
-                <Text>Current Daily Scheduled Time: {this.state.dailyTime}</Text>
+                <Text style={styles.h2}>Current Daily Scheduled Time:</Text>
 
-                <Switch onValueChange={this.setScheduled} value={this.state.scheduled} />
+                <Text style={styles.smallText}>{JSON.stringify(this.state.dailyTime)}</Text>
+
+                <Switch onValueChange={this._setScheduled} value={this.state.scheduled} />
+
+                 <Toast ref="toast"/>
             </View>
         );
     }
 }
-
-// define your styles
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#2c3e50',
-    },
-});
-
 //make this component available to the app
 export default Settings;

@@ -4,15 +4,13 @@ import { View, Text, StyleSheet } from 'react-native';
 import store from 'react-native-simple-store';
 
 import FortuneList from './FortuneList';
+import FlatListDemo from './FlatListDemo';
 
 // create a component
 class History extends Component {
     render() {
         return (
-            <View style={styles.container}>
-                <Text style={styles.titleText}>History</Text>
-                <FortuneList/>
-            </View>
+            <FortuneList style={styles.container} fortunes={this.props.fortunes}/>
         );
     }
 }

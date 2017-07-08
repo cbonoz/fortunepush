@@ -8,19 +8,21 @@ import FortuneList from './FortuneList';
 // create a component
 class CurrentFortune extends Component {
 
-    goToSettings() {
+    _goToSettings() {
         console.log('goToSettings');
     }
 
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.white}>Current Fortune</Text>
+                <Text style={styles.white}>Your Fortune for Today</Text>
+
+                <Text style={styles.smallText}>{this.props.currentFortune}</Text>
 
                 <Image style={styles.centered} source={require('./../../assets/fortune_push_175.png')}/>
 
                 <Button
-                    onPress={this.goToSettings}
+                    onPress={this._goToSettings}
                     title="Configure Fortune Settings"
                     color="#841584"
                     accessibilityLabel="Generate a new fortune push notification"
